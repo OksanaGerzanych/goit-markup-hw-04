@@ -77,11 +77,12 @@ p {
 
 .contact {
   display: flex;
+  gap: 30px;
 }
 
-.contact .list-item + .list-item {
+/* .contact .list-item + .list-item {
   margin-left: 50px;
-}
+} */
 
 .header {
   background: var(--second-btn-bgr);
@@ -140,6 +141,16 @@ p {
   letter-spacing: 0.02em;
   color: var(--p-text-color);
   text-decoration: none;
+
+  display: flex;
+  align-items: center;
+}
+
+
+.icon-header {
+  width: 16px;
+  height: 12px;
+  margin: 10px;
 }
 /* image */
 
@@ -228,7 +239,21 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.box-benefits {
+  width: 270px;
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.icon-benefits {
+  width: 70px;
+  height: 70px;
 
+}
 .container-benefits .list {
   display: flex;
 }
