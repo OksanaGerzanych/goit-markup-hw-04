@@ -130,7 +130,9 @@ p {
 .link-contact:hover,
 .link-contact:focus,
 .link:hover,
-.link:focus {
+.link:focus,
+.icon-header:hover,
+.icon-header:focus {
   color: var(--logo-text-color);
 }
 
@@ -150,8 +152,15 @@ p {
 .icon-header {
   width: 16px;
   height: 12px;
-  margin: 10px;
+  margin-right: 10px;
+  fill: currentColor;
 }
+.icon-header:hover,
+.icon-header:focus {
+  fill: currentColor;
+}
+
+
 /* image */
 
 .image,
@@ -183,7 +192,7 @@ p {
   background-image: 
   linear-gradient(rgba(47, 48, 58, 0.4), 
   rgba(47, 48, 58, 0.4)),
-  url(../images/fon.svg/img-1.svg);
+  url(../images/fon.svg/Img+.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -323,7 +332,7 @@ p {
 }
 .box-team {
   padding-top: 30px;
-  padding-bottom: 30px;
+  
 }
 .box-team .title-name {
   margin-bottom: 10px;
@@ -341,16 +350,51 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--p-text-color);
+  margin-bottom: 16px;
 }
 .image-team {
   background: url(4853.jpg);
   border-radius: 0px;
 }
+
+.list-social-links .list-item {
+
+  box-shadow: none;
+}
+.list-social-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  
+}
+.link-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-bgr);
+  border-radius: 50%;
+  color: #AFB1B8;
+ margin-bottom: 30px;
+}
+.link-social:hover{
+  color: var(--second-btn-bgr);
+  background-color: var(--logo-text-color);
+}
+
+.icon-team {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+
+}
 /* Clients */
 .container-clients .list {
   --items: 6;
-display: flex;
-gap: 30px;
+  display: flex;
+  gap: 30px;
+ 
 }
 
 .container-clients .list-item {
@@ -359,7 +403,29 @@ gap: 30px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
+ .container-clients .list-item:hover,
+ .container-clients .list-item:focus {
+  border-color: var(--logo-text-color);
+ }
+ 
+.icon-clients {
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
+}
+
+.icon-clients:hover,
+.icon-clients:focus {
+ fill: var(--logo-text-color); 
+
+}
+
+
 
 /* footer */
 .footer {
