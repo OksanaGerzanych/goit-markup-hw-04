@@ -318,12 +318,12 @@ p {
 .section-team {
   background: var(--team-btn-portfolio-bgr);
 }
-.container-team .list {
+.container-team .list-team {
   --items: 4;
   display: flex;
   gap: 30px;
 }
-.container-team .list-item {
+.container-team .card {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   background: var(--main-bgr);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -357,14 +357,11 @@ p {
   border-radius: 0px;
 }
 
-.list-social-links .list-item {
-
-  box-shadow: none;
-}
 .list-social-links {
   display: flex;
   gap: 10px;
   justify-content: center;
+  padding-bottom: 30px;
   
 }
 .link-social {
@@ -376,9 +373,10 @@ p {
   background-color: var(--main-bgr);
   border-radius: 50%;
   color: #AFB1B8;
- margin-bottom: 30px;
+ 
 }
-.link-social:hover{
+.link-social:hover,
+.link-social:focus {
   color: var(--second-btn-bgr);
   background-color: var(--logo-text-color);
 }
@@ -387,8 +385,9 @@ p {
   width: 20px;
   height: 20px;
   fill: currentColor;
-
 }
+
+
 /* Clients */
 .container-clients .list {
   --items: 6;
@@ -432,6 +431,7 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--main-title-footer-bgr);
+ 
 }
 .logo-footer {
   display: inline-block;
@@ -455,6 +455,48 @@ p {
 }
 .link {
   color: rgba(255, 255, 255, 0.6);
+}
+.title-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16/14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.container-footer {
+  display: flex;
+align-items: baseline;
+gap: 70px;
+
+}
+.list-social-links-footer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.link-social-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--second-btn-bgr);
+  background: rgba(255, 255, 255, 0.1);
+}
+.link-social-footer:hover,
+.link-social-footer:focus {
+  color: var(--second-btn-bgr);
+  background-color: var(--logo-text-color);
+} 
+.icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* portfolio page */
